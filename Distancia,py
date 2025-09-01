@@ -1,0 +1,16 @@
+import math
+
+distancias = []
+for i in range(6):
+    d = float(input(f"Digite a distância da viagem {i+1}: "))
+    distancias.append(d)
+
+total = sum(distancias)
+maior = max(distancias)
+menor = min(distancias)
+media = math.ceil(total / len(distancias))
+
+print("Distância total:", total)
+print("Maior distância:", maior)
+print("Menor distância:", menor)
+print("Média arredondada para cima:", media)
